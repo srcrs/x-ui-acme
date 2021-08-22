@@ -1,0 +1,23 @@
+version: '3'
+services:
+    acme.sh:
+        image: neilpang/acme.sh
+        restart: always
+        volumes:
+            - "./out:/acme.sh:z"
+        environment:
+            - CF_Key="54cd783c74ec25c4d223624b9f0f812f8542c"
+            - CF_Email="srcrszhu@gmail.com"
+        command: daemon
+    x-ui:
+        image: srcrs/x-ui
+        restart: always
+        network_mode: "host"
+        volumes:
+            - "./out:/root/out"
+        command:
+            - /bin/bash
+            - -c
+            - |
+                x-ui start
+                sleep infinity

@@ -6,8 +6,8 @@ services:
         volumes:
             - "./out:/acme.sh:z"
         environment:
-            - CF_Key="54cd783c74ec25c4d223624b9f0f812f8542c"
-            - CF_Email="srcrszhu@gmail.com"
+            - CF_Key="xxxxxxxxxxxxxxxxxxxx"
+            - CF_Email="xxxxxxxx@gmail.com"
         command: daemon
     x-ui:
         image: srcrs/x-ui

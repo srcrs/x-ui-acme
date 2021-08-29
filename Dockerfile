@@ -6,5 +6,4 @@ RUN apt-get update \
     && apt-get install systemctl -y \
     && wget -O /bin/install.sh https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh \
     && chmod +x /bin/install.sh \
-    && bash /bin/install.sh \
-    && x-ui start
+    && bash /bin/install.sh

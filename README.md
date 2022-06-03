@@ -1,7 +1,3 @@
-大家注意下不要再使用了，x-ui被莫名创建代理节点，具体用途不知道，现已不再使用了，有图为证，其中有台服务器创建了三个节点，每个都跑了150m流量，这是其中一台服务器的
-![截屏2022-06-03 下午3 15 07](https://user-images.githubusercontent.com/49332985/171807171-2bf5ac01-9fb3-4b33-ac28-9591285471fb.png)
-
-
 ## 介绍
 
 该项目依托于[docker](https://www.docker.com/)、[docker-compose](https://github.com/docker/awesome-compose)、[x-ui](https://github.com/vaxilu/x-ui)、[acme.sh](https://github.com/acmesh-official/acme.sh)，能够快速搭建出跳跃节点。
